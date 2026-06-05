@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Akhilesh Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="theme1">
+
+<!-- THEME -->
+<div class="theme-box">
+  <button onclick="setTheme('theme1')">🌌</button>
+  <button onclick="setTheme('theme2')">🌿</button>
+</div>
+
+<div id="main" class="main">
+
+  <!-- LEFT SIDE -->
+  <div class="left">
+    <img src="boy.jpg" class="profile-img" onclick="showDetails()">
+
+    <h1 class="name">Akhilesh</h1>
+    <p id="role-text" class="role"></p>
+  </div>
+
+  <!-- RIGHT SIDE -->
+  <div id="details" class="right hidden">
+
+    <h1>Akhilesh</h1>
+    <p>Full Stack Developer 🚀</p>
+
+    <h3>About Me</h3>
+    <p>I build modern and interactive web applications.</p>
+
+    <h3>Skills</h3>
+    <p>HTML, CSS, JavaScript, Node.js, MongoDB</p>
+
+    <button class="btn" onclick="openPopup()">Contact Me</button>
+
+  </div>
+
+</div>
+
+<!-- POPUP -->
+<div id="popup" class="popup hidden">
+  <div class="popup-content">
+
+    <h3>Contact Me</h3>
+
+    <input id="name" placeholder="Name">
+    <input id="mobile" placeholder="Mobile">
+    <input id="email" placeholder="Email">
+
+    <button onclick="submitForm()">Submit</button>
+    <button onclick="closePopup()">Close</button>
+
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
